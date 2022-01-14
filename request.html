@@ -1,0 +1,85 @@
+<html>
+	
+<head>
+	<title>Neighborhood</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script> <!--Email Sendings-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--JQUERY-->
+    <script src="request.js"></script>
+	<link rel="stylesheet" type="text/css" href="generic.css">
+    <link rel="stylesheet" type="text/css" href="request.css">
+    <link rel="icon" href="favicon.png">
+</head>
+<body>
+    <header class="main-header">
+		<table id = "headertable">
+			<td id = "title">
+				<a href="index.html"><img src = "Neighborhood.png" height="50px"></a>
+			</td>
+
+			<td>
+				<button id = "sign-up" class = "button" onclick="window.location.href='signup.html'">
+					Sign Up
+				</button>
+			</td>
+
+			<td>
+				<button class = "button" onclick="window.location.href='profile.html'">
+					Account
+				</button>
+			</td>
+			
+		</table>
+	</header>
+
+    <div id = filler></div>
+
+    <div id = "theRest">
+        <h1><i>Request A Job To Be Done</i></h1>
+    </div>
+
+    <div id = "infoPlace">
+        <p1 id = "requestName">John Doe</p1><br>
+        <p1 id = "locationName">Place, Place</p1><br>
+        <p1 id = "emailName">filleremail@example.com</p1><br>
+        <p1 id = "phoneName">4206666969</p1><br>
+
+        <table id = "inputPlace">
+            <tr>
+                <td>Request Name:</td>
+                <td><input id="request" class = "requestDetails" placeholder="Request"></td>
+            </tr>
+            <tr>
+                <td>Duration:</td>
+                <td><select  id="duration" class="requestDetails">
+                    <option>0 ~ 30 Min</option>
+                    <option>30 Min ~ 1 Hour</option>
+                    <option>1 ~ 2 Hours</option>
+                    <option>2 ~ 4 Hours</option>
+                    <option>4 Hours +</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Category:</td>
+                <td><select  id="category" class="requestDetails">
+                    <option>Yardwork</option>
+                    <option>Tutoring</option>
+                    <option>Caretaking</option>
+                    <option>Delivery</option>
+                    <option>Professional</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Description:</td>
+                <td><textarea id="description" class = "requestDetails"></textarea></td>
+            </tr>
+            <tr>
+                <td>Tags (Separate with ","):</td>
+                <td><textarea id="tags" class = "requestDetails"></textarea></th>
+            </tr>
+        </table>
+        <button onclick="addRequest(); window.location.href='index.html'" class = "button button100">Submit</button>
+    </div>
+
+</body>
+
+</html>

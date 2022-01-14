@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+
+<html>
+
+  <head>
+    <title> Profile Page </title>
+    <link rel="stylesheet" href="./generic.css">
+    <link rel="stylesheet" href="./profile.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="profile.js"></script>
+    
+    </script>
+
+  </head>
+
+  <body id="profilebody">
+    <!-- header actual-->
+    <header id="actualheader" class="main-header">
+      <table id="headertable">
+        <td id="title">
+          <a href="index.html"><img src="Neighborhood.png" height="50px"></a>
+        </td>
+
+        <td>
+          <button id="sign-up" class="button" onclick="window.location.href='signup.html'">
+            Sign Up
+          </button>
+        </td>
+
+        <td>
+          <button class="button" onclick="window.location.href='profile.html'">
+            Account
+          </button>
+        </td>
+
+      </table>
+    </header>
+    <div class="container">
+      <!-- Header -->
+      <div id="profile-header" class="profile-header">
+        <div class="profile-img">
+          <img
+            src="https://static.wikia.nocookie.net/onepiece/images/a/af/Tony_Tony_Chopper_Anime_Post_Timeskip_Infobox.png">
+        </div>
+        <div class="profile-nav-info">
+          <h3 id="name" class="user-name"> Example User </h3>
+          <div class="address">
+            <p id="city" class="state"> Cleveland, </p>
+            <span id="state" class="state"> OH </span>
+          </div>
+        </div>
+        <div class="credButtons">
+
+          <button onclick="decreaseBar()"> Take credibility </button>
+        </div>
+        <div>
+          <table id="credibilityTable">
+            <tr id="CT1">
+              <td>
+                <h3> Credibility level: <scan id="CT1"> 1 </scan>
+                </h3>
+              </td>
+            </tr>
+            <tr id="CT2">
+              <td>
+                <div id="myProgress">
+                  <div id="myBar"></div>
+                </div>
+              </td>
+            </tr>
+
+          </table>
+        </div>
+        <div class="credButtons">
+          <button onclick="increaseBar()"> Give credibility </button>
+
+        </div>
+        
+      </div>
+      <!-- Main body -->
+      <div id="profile-main" class="main-bd">
+        <!-- Left Side-->
+        <div class="left-side">
+          <!-- Profile side -->
+          <div class="profile-side">
+            <p id="phone" class="mobile-no">
+              <scan class="symbol"> ☎ </scan> 216-999-9999
+            </p>
+            <p id="email" class="user-mail">
+              <scan class="symbol"> ✉ </scan> helpfulguy@gmail.com
+            </p>
+            <div class="user-bio">
+              <h2 class="bio"> Bio:</h2>
+              <div id="biography"> My name is Yoshikage Kira. I'm 33 years old. My house is in the northeast section of
+                Morioh, where all the villas are, and I am not married. I work as an employee for the Kame Yu
+                department stores, and I get home every day by 8 PM at the latest. I don't smoke, but I occasionally
+                drink. I'm in bed by 11 PM, and make sure I get eight hours of sleep, no matter what.
+              </div>
+            </div>
+
+          </div>
+          <div id="skillstab">
+            <h2 class="bio"> Skills: </h2>
+            <ul>
+              <li> Tutoring </li>
+              <li> Yardwork </li>
+              <li> Dog Walking </li>
+            </ul>
+          </div>
+          <!-- buttons -->
+          <div class="btn-section">
+            <div class="buttonDiv">
+            <button class="chatbtn buttonp" onClick="chatClick()">
+              <i class="fa fa-comment"></i> Chat
+            </button>
+            <input class="buttonInput" id="chatbutton" type="text"><br>
+            </div>
+            <div class="buttonDiv">
+            <button class="reviewbtn buttonp" onClick="reviewClick()">
+              <i class="fa fa-plus"></i>Review
+            </button>
+            <input class="buttonInput" id="reviewbutton" type="text"><br>
+            </div>
+            <div class="buttonDiv">
+            <button class="requestbtn buttonp" onClick="requestClick()">
+              <i class="????"></i>Request Service
+            </button>
+            <input class="buttonInput" id="requestbutton" type="text" width=50%><br>
+            </div>
+          </div>
+          
+
+          <!-- 
+                    <div class="user-rating">
+                        <h3 class="rating"> <scan> Rating: </scan> 4.5/5</h3>
+                    </div>
+                    -->
+
+
+
+        </div>
+        <!-- Right side-->
+        <div class="right-side">
+          <!-- Tab links -->
+          <div class="tab">
+            <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'CompletedTasks')" >Completed Tasks</button>
+            
+              
+              
+            <button class="tablinks" onclick="openTab(event, 'Reviews')">Reviews</button>
+            <button class="tablinks" onclick="openTab(event, 'Settings')">Settings</button>
+          </div>
+
+          <!-- Tab content -->
+          <div id="CompletedTasks" class="tabcontent">
+            <h3 class="tabtitles">Completed Tasks (Youngest Ascending)</h3>
+            <table id="tasktable">
+              <tr>
+                <th>Date</th>
+                <th> Task Type </th>
+                <th> Hours </th>
+                <th> Location </th>
+              </tr>
+              <tr>
+                <td>3/10/21</td>
+                <td> Caretaking </td>
+                <td> 3 </td>
+                <td> 992 Hanover Rd. </td>
+              </tr>
+              <tr>
+                <td>2/19/21</td>
+                <td> Yardwork </td>
+                <td> 2 </td>
+                <td> 278 Bishop Rd. </td>
+              </tr>
+              <tr>
+                <td>2/7/21</td>
+                <td> Caretaking </td>
+                <td> 6 </td>
+                <td> 137 Myerbriggs Ln. </td>
+              </tr>
+              <tr>
+                <td>1/31/21</td>
+                <td> Delivery </td>
+                <td> 1 </td>
+                <td> 356 Amogus Blvd. </td>
+              </tr>
+              <tr>
+                <td>1/9/21</td>
+                <td> Tutoring </td>
+                <td> 4 </td>
+                <td> 7743 Isner Rd. </td>
+              </tr>
+              <tr>
+                <td>11/18/20</td>
+                <td> Caretaking </td>
+                <td> 4 </td>
+                <td> 992 Hanover Rd. </td>
+              </tr>
+            </table>
+          </div>
+
+          <div id="Reviews" class="tabcontent">
+            <h3 class="tabtitles">Reviews</h3>
+            <ul>
+              <li>Ethan is very hardworking. I would recommend him for any babysitting job. - Jane Doe </li>
+              <li>Ethan is slightly lazy. But he can mow lawns, I suppose. - John Doe </li>
+            </ul>
+          </div>
+
+          <div id="Settings" class="tabcontent">
+            <h3 class="tabtitles">Settings</h3>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+          <!-- tab buttons 
+          <div class="nav">
+            <ul>
+              <li onclick="tabs(0)" class="user user-post active"> Posts</li>
+              <li onclick="tabs(1)" class="user user-review">Reviews</li>
+              <li onclick="tabs(2)" class="user user-setting">Settings</li>
+            </ul>
+          </div>
+           Tab texts 
+          <div class="profile-body">
+            <div class="profile-posts tab">
+              <p> profile posts </p>
+            </div>
+            <div class="profile-review tab">
+              <p> profile reviews</p>
+            </div>
+            <div class="profile-setting tab">
+              <p> profile settings </p>
+            </div>
+          </div>
+        -->
+        </div>
+      
+      </div>
+
+    </div>
+
+
+
+  </body>
+
+</html>
+

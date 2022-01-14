@@ -1,0 +1,48 @@
+input:invalid {
+    border: 1px solid rgb(99, 99, 99);
+}
+
+input:valid {
+    border: 2px solid rgb(156, 230, 122);
+}
+
+.center {
+    margin: 0 auto;
+    width: 50%;
+    background: rgb(76, 187, 23);
+    padding: 20px;
+    color: white;
+}
+
+.infoBox{
+    width:70%;
+    border-radius:5px;
+    border:0;
+    height:40px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:20px;
+    padding-left: 20px;
+}
+
+.infoBox:focus {
+    background-color: rgb(200, 252, 177);
+}
+
+#form{
+    width: 100%;
+}
+
+.headerText {
+    margin-left: auto;
+    width: 54%;
+}
+
+.promptText{
+    width: 15%;
+}
+
+.buttonbox{
+    height: 50px;
+    text-align: center;
+}

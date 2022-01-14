@@ -1,0 +1,77 @@
+<html>
+	
+<head>
+	<title>Neighborhood</title>
+    <script src="index.js"></script>
+	<link rel="stylesheet" type="text/css" href="generic.css">
+	<link rel="stylesheet" type="text/css" href="indexCreateRequest.css">
+    <link rel="icon" href="favicon.png">
+</head>
+<body data-new-gr-c-s-check-loaded="8.871.0" data-gr-ext-installed="">
+	<header class="main-header">
+		<table id = "headertable">
+			<td id = "title">
+				<a href="index.html"><img src = "Neighborhood.png" height="50px"></a>
+			</td>
+
+			<td>
+				<button id = "sign-up" class = "button" onclick="window.location.href='signup.html'">
+					Sign Up
+				</button>
+			</td>
+
+			<td>
+				<button class = "button" onclick="window.location.href='profile.html'">
+					Account
+				</button>
+			</td>
+			
+		</table>
+	</header>
+
+	<nav class="navbar" id="searchbar">
+		<form id = "form" class="container">
+			<input type="search" id = "searchbartext" placeholder="Search">
+			<button class = "button" href="#" onclick = "search()">
+				Search
+			</button>
+			<button class = "button">
+				Advanced Search
+			</button>
+		</form>
+	</nav>
+
+	<div class = "navbar" id = "line"></div>
+
+	<nav class="navbar">
+		<div class="container">
+			<ul>
+				<li><a href="#" onclick = "sortnew()">Time (Newest)</a></li>
+				<li><a href="#" onclick = "sortold()">Time (Oldest)</a></li>
+				<li><a href="#" onclick = "sortshort()">Duration (Shortest)</a></li>
+				<li><a href="#" onclick = "sortlong()">Duration (Longest)</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<aside id = "register">
+		<h1>Request A Job To Be Done</h1>
+		Do you need a someone to get a job done for you?
+		<br><br>
+		By using this platform, you can easily request assistance for a job that needs to be done.
+		It doesn't matter if your out of time or its the job is beyond your feild of expertise,
+		our users are bound to get to your request!
+		<br><br>
+		Click the button below to get started!
+		<br><br>
+		<button class = "button requestButton" onclick="window.location.href='request.html'">Request Job</button>
+
+	</aside>
+
+	<div id = "reqlist">
+		
+	</div>
+
+	
+
+</body></html>

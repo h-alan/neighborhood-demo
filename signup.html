@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Sign up</title>
+        <script src="signup.js"></script>
+        <link rel="stylesheet" type="text/css" href="signup.css">
+        <link rel="stylesheet" type="text/css" href="generic.css">
+        <link rel="icon" href="favicon.png">
+    </head>
+
+    <body>
+        <header class="main-header">
+            <table id = "headertable">
+                <td id = "title">
+                    <a href="index.html"><img src = "Neighborhood.png" height="50px"></a>
+                </td>
+    
+                <td>
+                    
+					<button class = "button" onclick="window.location.href='profile.html'">
+                        Account
+                    </button>
+                </td>
+                
+            </table>
+        </header>
+
+        <div id = filler></div>
+
+        <div class="center">
+            <!-- CENTER THE PAGE -->
+
+            <h1 class = "headerText">Sign Up</h1>
+
+            <form id="contactForm">
+                <table id = "form">
+                    <tr>
+                        <th class = "promptText">
+                            <label for="first">First Name</label>
+                        </th>
+                        <th>
+                            <input type="text" name="first" id="first" class="infoBox" required>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class = "promptText">
+                            <label for="last">Last Name</label>
+                        </th>
+                        <th>
+                            <input type="text" name="last" id="last" class="infoBox" required>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class = "promptText">
+                            <label for="email">Email</label>
+                        </th>
+                        <th>
+                            <input type="tex" name="email" id="email" class="infoBox" required>
+                        <th>
+                    </tr>
+                    <tr>
+                        <th class = "promptText">
+                            <label for="phone">Phone Number</label>
+                        </th>
+                        <th>
+                            <input type="phone" name="phone" id="phone" class="infoBox" required>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class = "promptText">
+                            <label for="password">Password</label>
+                        </th>
+                        <th>
+                            <input type="password" name="password" id="password" class="infoBox" required>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class = "promptText">
+                            <label for="city">City</label>
+                        </th>
+                        <th>
+                            <input type="city" name="city" id="city"class="infoBox"  required>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class = "promptText">
+                            <label for="state">State</label>
+                        </th>
+                        <th>
+                            <input type="state" name="state" id="state" class="infoBox" required>
+                        </th>
+                    </tr>
+                </table>
+
+                <div class="buttonbox">
+                    <input type="submit" value="Submit" class = "button button100">
+                </div>
+
+                <label>
+                    <input type="checkbox" name="remember" style="margin-bottom:15px"> Remember me
+                  </label>
+                  
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                
+            </form>
+            <p class = "buttonbox">
+                <button onclick="deleteSave()" type="button" class = "button">CLEAR ALL DATA</button>  
+                <button class = "button" onclick="window.location.href='index.html'">Home</button>
+            </p>
+
+            <p id="display"></p>
+
+        </div>
+
+    </body>
+
+</html>

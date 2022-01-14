@@ -1,0 +1,38 @@
+#register{
+    position:fixed;
+    top: 275px;
+    right: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    background-color:rgb(124, 127, 129);
+    float: right;
+    width: 30%;
+    -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 6px;
+}
+
+.requestButton{
+    margin-top: 25px;
+}
+
+#reqlist{
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 50%;
+    -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 6px;
+    color:rgb(99, 99, 99);
+    line-height: 1;
+}
+
+#listitem{
+    -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 6px;
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 50px;
+}
